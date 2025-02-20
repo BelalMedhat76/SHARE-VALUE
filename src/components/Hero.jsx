@@ -1,128 +1,50 @@
-import React from "react";
-import { Box, Typography, Button, Container } from "@mui/material";
-import { motion } from "framer-motion";
-import heroImage from "../assets/hero.webp"; // Ensure you have an image
-
-const Hero = () => {
+import React from 'react';
+import hero from '../images/hero.webp'
+const HeroSection = () => {
   return (
-    <Box
-      sx={{
-        position: "relative",
-        width: "100vw",
-        height: "100vh",
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-        textAlign: "center",
-        color: "white",
-        overflow: "hidden",
-        pt: "100px",
-      }}
-    >
-      {/* Background Image with Full Size */}
-      <Box
-        sx={{
-          position: "absolute",
-          top: 0,
-          left: 0,
-          width: "100%",
-          height: "100%",
-          backgroundImage: `url(${heroImage})`,
-          backgroundSize: "cover",
-          backgroundPosition: "center",
-          backgroundRepeat: "no-repeat",
-          filter: "brightness(0.5)",
-          zIndex: -1,
-        }}
-      />
+    <header className="relative w-full h-[100vh] flex items-center justify-center overflow-hidden">
+      {/* Background Image */}
+      <div className="absolute inset-0">
+        <img
+          src={hero}
+          alt="Hero background"
+          className="w-full h-full  object-fill animate-ken-burns"
+        />
+        {/* Overlay Gradient */}
+        <div className="absolute inset-0 bg-gradient-to-r from-[#5999BB]/30 to-[#17372f]/60" />
+      </div>
 
-      {/* Content Container */}
-      <Container
-        maxWidth="lg"
-        sx={{
-          display: "flex",
-          flexDirection: "column",
-          alignItems: "center",
-          textAlign: "center",
-          mt: { xs: -5, md: -10 },
-        }}
-      >
-        {/* Animated Text Content */}
-        <motion.div
-          initial={{ opacity: 0, y: 50 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
-        >
-          <Typography
-          variant="h4"
-          fontWeight="bold" 
-        
-          sx={{ 
-            fontFamily: "Poppins, sans-serif", 
-            fontSize: { xs: "2rem", md: "5rem" },
-            textTransform: "uppercase",
-            letterSpacing: "2px",
-            background: "linear-gradient(90deg, #00C897, #007BFF)",
-            WebkitBackgroundClip: "text",
-            WebkitTextFillColor: "transparent",
-            fontStyle:"italic"
-          }}
-          data-aos="fade-up"
-         
-          >
-           
+      {/* Hero Content */}
+      <div className="relative text-center text-white px-4" data-aos="fade-up" data-aos-duration="1500">
+        <h1 className="text-5xl md:text-7xl font-bold mb-6 animate-fade-in">
+          Welcome to DeWorld
+        </h1>
+        <p className="text-xl md:text-2xl max-w-2xl mx-auto mb-8 animate-fade-in" data-aos="fade-up" data-aos-delay="300">
+          Explore the future of blockchain technology and decentralized innovation
+        </p>
 
-
-
-SHARE VALUE
-          </Typography>
-          <Typography
-            variant="h6"
-            mt={2}
-            sx={{ fontSize: { xs: "1.2rem", md: "1.5rem" }, maxWidth: "700px" }}
-          >
-Innovate – A DeWorld Education Hub          </Typography>
-        </motion.div>
-
-        {/* Animated Buttons */}
-        <motion.div
-          initial={{ opacity: 0, scale: 0.8 }}
-          animate={{ opacity: 1, scale: 1 }}
-          transition={{ duration: 1, delay: 0.3 }}
-          style={{ marginTop: "2rem", display: "flex", gap: "1.5rem", flexWrap: "wrap", justifyContent: "center" }}
-        >
-          <Button
-            variant="contained"
-            sx={{
-              bgcolor: "#002333",
-              fontSize: { xs: "1rem", md: "1.2rem" },
-              width:"150px",
-              height:"50px",
-              transition: "all 0.3s ease",
-              '&:hover': { bgcolor: "primary.main" },
-            }}
+        {/* Buttons */}
+        <div className="flex justify-center space-x-6">
+          <a
+            href="#learn"
+            className="px-8 py-3 text-lg font-semibold bg-indigo-600 hover:bg-indigo-700 transition-all duration-300 transform hover:scale-105 rounded-lg shadow-lg animate-fade-in"
+            data-aos="zoom-in"
+            data-aos-delay="500"
           >
             Learn
-          </Button>
-          <Button
-            variant="outlined"
-            sx={{
-              borderColor: "white",
-              color: "white",
-              fontSize: { xs: "1rem", md: "1.2rem" },
-  
-           width:"150px",
-           height:"50px",
-              transition: "all 0.3s ease",
-              '&:hover': { bgcolor: "white", color: "black" },
-            }}
+          </a>
+          <a
+            href="#create"
+            className="px-8 py-3 text-lg font-semibold border-2 border-white text-white hover:bg-white hover:text-black transition-all duration-300 transform hover:scale-105 rounded-lg shadow-lg animate-fade-in"
+            data-aos="zoom-in"
+            data-aos-delay="700"
           >
-       Create
-          </Button>
-        </motion.div>
-      </Container>
-    </Box>
+            Create
+          </a>
+        </div>
+      </div>
+    </header>
   );
 };
 
-export default Hero;
+export default HeroSection;
