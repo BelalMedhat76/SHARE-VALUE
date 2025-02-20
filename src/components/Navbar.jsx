@@ -133,12 +133,12 @@ const Navbar = () => {
   }, [isDark]);
 
   return (
-    <nav className="fixed w-full bg-gradient-to-r from-[#5999BB] via-[#60614B] via-[#60614B -> #60614B] dark:bg-gray-900/80 backdrop-blur-sm z-50">
+    <nav className="fixed w-full bg-gradient-to-r from-[#5999BB] via-[#60614B] via-[#60614B ->rgb(68, 70, 44)] dark:bg-gray-900/80 backdrop-blur-sm z-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <div className="flex-shrink-0">
-            <h1 className="text-2xl font-bold bg-gradient-to-r from-[#60614B] via-[#5999BB] via-[#0f4437] to-[#0f4437] bg-clip-text text-transparent dark:text-indigo-400">
+            <h1 className="text-2xl font-bold bg-gradient-to-r from-[#60614B] via-[#132a36] via-[#0f4437] to-[#0f4437] bg-clip-text text-transparent dark:text-indigo-400">
               Share Value
             </h1>
           </div>

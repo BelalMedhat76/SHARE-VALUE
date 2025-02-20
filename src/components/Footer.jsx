@@ -10,7 +10,7 @@ const Footer = () => {
         <div data-aos="fade-up" data-aos-delay="100">
           <div className="flex items-center space-x-3">
             <Globe className="w-7 h-7 text-teal-300" />
-            <h3 className="text-2xl font-bold bg-gradient-to-r from-[#60614B] via-[#5999BB] via-[#0f4437] to-[#0f4437] bg-clip-text text-transparent">
+            <h3 className="text-2xl font-bold bg-gradient-to-r from-[#60614B] via-[#193544] via-[#0f4437] to-[#0f4437] bg-clip-text text-transparent">
   Share Value
 </h3>
           </div>
