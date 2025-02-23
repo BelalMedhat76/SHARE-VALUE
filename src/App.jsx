@@ -22,7 +22,6 @@ function App() {
    <div className="min-h-screen  bg-gradient-to-r from-[#5999BB] via-[#83C7C6] via-[#D9B493]  to-[#60614B]  dark:bg-[#ad6a5be3]">
   <Navbar />
   
-  {/* Hero Section */}
   <HeroSection />
   <FeatureCards />
 <GradientCardsSection/>

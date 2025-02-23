@@ -12,11 +12,14 @@ const GradientCardsSection = () => {
     <section className="py-20 px-6 md:px-12 lg:px-24">
       {/* Header Section */}
       <div className="text-center mb-12" data-aos="zoom-in">
-        <h2 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-[#60614B] via-[#5999BB] to-[#363627] bg-clip-text text-transparent">
+        <h2  
+                      style={{ fontFamily: "Times New Roman, serif" }}
+
+        className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-[#3b3b2c] via-[#2b5064] to-[#414121] bg-clip-text text-transparent">
           Global Access & Innovation
         </h2>
-        <p className="text-lg text-gray-700 dark:text-gray-300 max-w-2xl mx-auto mt-4">
-          Explore how decentralization is shaping a globally connected future.
+        <p className="text-lg text-gray-700 font-bold dark:text-gray-300 max-w-2xl mx-auto mt-4">
+          Explore How Decentralization Is Shaping A Globally Connected Future.
         </p>
       </div>
 

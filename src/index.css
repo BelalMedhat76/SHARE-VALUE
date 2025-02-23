@@ -14,3 +14,6 @@
 .animate-ken-burns {
   animation: ken-burns 20s ease-out infinite alternate;
 }
+html{
+  text-transform: capitalize;
+} 

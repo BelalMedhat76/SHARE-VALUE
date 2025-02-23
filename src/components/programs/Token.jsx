@@ -4,7 +4,7 @@ import token from '../../images/token.webp';
 
 const ProgramSection = () => {
   const data = {
-    title: 'Token Programs',
+    title: 'TOKEN PROGRAM',
     image: token,
     levels: [
       {
@@ -33,7 +33,7 @@ const ProgramSection = () => {
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
         
         {/* Image Section */}
-        <div data-aos="fade-up">
+        <div >
           <img
             src={data.image}
             alt={data.title}
@@ -43,12 +43,14 @@ const ProgramSection = () => {
      
         {/* Text Content */}
         <div className="space-y-8">
-          <h2 
-            className="text-3xl md:text-4xl lg:text-5xl font-bold bg-gradient-to-r from-[#60614B] via-[#5999BB] to-[#b63b1fde] bg-clip-text text-transparent"
-            data-aos="fade-up"
-          >
-            {data.title}
-          </h2>
+        <h2 
+  className="text-3xl md:text-4xl lg:text-5xl font-extrabold bg-gradient-to-r from-[#60614B] via-[#2a688a] to-[#b63b1fde] bg-clip-text text-transparent"
+  style={{ fontFamily: "Times New Roman, serif" }} 
+  data-aos="fade-up"
+>
+  {data.title}
+</h2>
+
 
           {/* Levels */}
           <div className="space-y-6">

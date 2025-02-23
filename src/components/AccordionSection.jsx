@@ -5,28 +5,28 @@ import AOS from "aos";
 
 const accordionData = [
   {
-    title: "Blockchain Security",
-    description: "Enhance security with decentralized blockchain technology, ensuring data integrity and protection.",
+    title: "Shape The Future",
+    description: " Be part of the next-generation decentralized education revolution. Bring your skills, contribute to the growth, and shape the future of learning.",
     icon: <ShieldCheck className="text-[#FF6B6B] w-6 h-6 mr-3" />,
   },
   {
-    title: "Cloud Decentralization",
-    description: "Leverage decentralized cloud computing to eliminate single points of failure and improve efficiency.",
+    title: "Share The Value",
+    description: " Understand and actively participate in the value-sharing ecosystem. Innovate, create, and share with a community focused on empowering everyone.",
     icon: <Cloud className="text-[#4ECDC4] w-6 h-6 mr-3" />,
   },
   {
-    title: "Smart Devices & IoT",
-    description: "Integrating blockchain with IoT to provide enhanced security and data accuracy across devices.",
+    title: "Start Early And Lead The Change",
+    description: "Get involved now and gain early access to the future of education and blockchain. Be the first to shape the way the world learns and shares knowledge.",
     icon: <Network className="text-[#FFE66D] w-6 h-6 mr-3" />,
   },
   {
-    title: "Innovation Hub",
-    description: "A platform for hackathons, collaboration, and idea-sharing.",
+    title: "Empower Your Journey",
+    description: "Whether you're new to space or an expert, our AI tools empower you to learn, create, and innovate—anytime, anywhere, for everyone. Build and innovate on the DeepRoots Blockchain for DeWorld, transforming industries with secure, decentralized systems.",
     icon: <Atom className="text-[#6B5B95] w-6 h-6 mr-3" />,
   },
   {
-    title: "Empowering Creators",
-    description: "Turn ideas into reality and shape the future of DeWorld.",
+    title: "Collaborate & Grow",
+    description: "Whether you're new to space or an expert, our AI tools empower you to learn, create, and innovate—anytime, anywhere, for everyone. Build and innovate on the DeepRoots Blockchain for DeWorld, transforming industries with secure, decentralized systems",
     icon: <Lightbulb className="text-[#FF6F61] w-6 h-6 mr-3" />,
   },
 ];
@@ -43,15 +43,18 @@ const AccordionSection = () => {
   };
 
   return (
-    <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-[#376959] via-[#774f4b] to-[#8ea38f] dark:bg-gray-900">
+    <section className="py-16 px-4 sm:px-6 lg:px-8 bg-gradient-to-r from-[#2a4858] via-[#60614B] to-[#2c2e12be] dark:bg-gray-900">
       <div className="max-w-7xl mx-auto">
-        {/* Section Header */}
-        <h2
-          className="text-3xl md:text-4xl lg:text-5xl text-center mb-20 font-bold bg-gradient-to-r from-[#f1e9e0] via-[#68b3a1] to-[#293b37] bg-clip-text text-transparent"
-          data-aos="zoom-in"
-        >
-          Our Technology Stack
+      <div className="text-center mb-12" data-aos="zoom-in">
+        <h2  
+                      style={{ fontFamily: "Times New Roman, serif" }}
+
+        className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-[#9a9c6e] via-[#497c97] to-[#85851d] bg-clip-text text-transparent">
+         From People To People
         </h2>
+        <p className="text-lg text-gray-800 font-bold dark:text-gray-900 max-w-2xl mx-auto mt-4">
+        Everyone AnytimeAnywhere        </p>
+      </div>
 
         <div className="grid md:grid-cols-2 gap-12 items-stretch">
           {/* Accordion */}
@@ -86,7 +89,7 @@ const AccordionSection = () => {
           </div>
 
           {/* Image Section - Same Height as Accordion */}
-          <div className="relative flex flex-col justify-center h-full" data-aos="zoom-out">
+          <div className="relative flex flex-col justify-center h-full" data-aos="zoom-in">
             <img
               src="https://images.unsplash.com/photo-1639762681485-074b7f938ba0?auto=format&fit=crop&q=80&w=800"
               alt="Technology Stack"

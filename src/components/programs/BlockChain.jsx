@@ -4,7 +4,7 @@ import block from '../../images/block.webp'
 const BlockchainProgramSection = () => {
   // Hardcoded Data for Blockchain Program
   const data = {
-    title: 'Blockchain Programs',
+    title: 'BLOCKCHAIN PROGRAM',
     image: block,
     levels: {
       basic: 'Learn blockchain basics and how it works.',
@@ -26,8 +26,11 @@ const BlockchainProgramSection = () => {
         </div> 
         {/* Text Content */}
         <div className="space-y-8">
-          <h2  className="text-3xl md:text-4xl lg:text-5xl font-bold bg-gradient-to-r from-[#60614B] via-[#5999BB] via-[#b63b1fde] to-[#144661] bg-clip-text text-transparent"
-  data-aos="fade-up">{data.title}</h2>
+        <h1   className="text-3xl md:text-4xl lg:text-5xl font-extrabold bg-gradient-to-r from-[#60614B] via-[#2a688a] to-[#b63b1fde] bg-clip-text text-transparent"
+  style={{ fontFamily: "Times New Roman, serif" }} 
+  data-aos="fade-up">
+  {data.title}
+</h1>
           <div className="space-y-6">
             <div className="flex items-start space-x-4" data-aos="fade-up" data-aos-delay="100">
               <CheckCircle className="w-6 h-6 text-indigo-600 mt-1" />

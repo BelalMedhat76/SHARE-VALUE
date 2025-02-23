@@ -4,7 +4,7 @@ import web3 from '../../images/web3.webp';
 
 const Web3ProgramSection = () => {
   const data = {
-    title: 'Web3 Programs',
+    title: 'WEB3 PROGRAM',
     image: web3,
     levels: [
       {
@@ -31,10 +31,11 @@ const Web3ProgramSection = () => {
         
         {/* Text Content */}
         <div className="space-y-8 ">
-          <h2 className="text-3xl md:text-4xl  lg:text-5xl font-bold bg-gradient-to-r from-[#60614B] via-[#5999BB] via-[#b63b1fde] to-[#144661] bg-clip-text text-transparent"
-            data-aos="fade-up">
-            {data.title}
-          </h2>
+        <h1   className="text-3xl md:text-4xl lg:text-5xl font-extrabold bg-gradient-to-r from-[#60614B] via-[#2a688a] to-[#b63b1fde] bg-clip-text text-transparent"
+  style={{ fontFamily: "Times New Roman, serif" }} 
+  data-aos="fade-up">
+  {data.title}
+</h1>
 
           {/* Levels */}
           <div className="space-y-6">

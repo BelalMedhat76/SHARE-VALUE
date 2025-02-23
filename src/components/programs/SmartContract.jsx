@@ -5,7 +5,7 @@ import smart from '../../images/smart.webp';
 const SmartContractProgramSection = () => {
   // Hardcoded Data for Smart Contract Program
   const data = {
-    title: 'Smart Contract Programs',
+    title: 'SMART CONTRACT PROGRAM',
     image: smart,
     levels: {
       basic: 'Understand the basics of smart contracts and their functionality.',
@@ -17,14 +17,22 @@ const SmartContractProgramSection = () => {
   return (
     <section className="py-20  px-4 sm:px-6 bg-gradient-to-r from-[#5999BB] via-[#ad6a5be3] via-[#B3E8D6]  to-[#a0946d] lg:px-8">
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
+           {/* Image Section */}
+           <div data-aos="fade-up">
+          <img
+            src={data.image}
+            alt={data.title}
+            className="w-full h-96 object-cover rounded-xl shadow-lg transform transition-transform hover:scale-105"
+          />
+        </div>
+     
         {/* Text Content */}
         <div className="space-y-8">
-          <h2
-            className="text-3xl md:text-4xl lg:text-5xl font-bold bg-gradient-to-r from-[#60614B] via-[#5999BB] via-[#b63b1fde] to-[#144661] bg-clip-text text-transparent"
-  data-aos="fade-up"
-          >
-            {data.title}
-          </h2>
+        <h1   className="text-3xl md:text-4xl lg:text-5xl font-extrabold bg-gradient-to-r from-[#60614B] via-[#2a688a] to-[#b63b1fde] bg-clip-text text-transparent"
+  style={{ fontFamily: "Times New Roman, serif" }} 
+  data-aos="fade-up">
+  {data.title}
+</h1>
           <div className="space-y-6">
             {/* Basic */}
             <div
@@ -77,14 +85,7 @@ const SmartContractProgramSection = () => {
 
         </div>
 
-        {/* Image Section */}
-        <div data-aos="fade-up">
-          <img
-            src={data.image}
-            alt={data.title}
-            className="w-full h-96 object-cover rounded-xl shadow-lg transform transition-transform hover:scale-105"
-          />
-        </div>
+  
       </div>
     </section>
   );

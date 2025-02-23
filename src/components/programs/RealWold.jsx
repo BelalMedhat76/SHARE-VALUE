@@ -4,7 +4,7 @@ import RWA from '../../images/RWA.webp';
 
 const RWAProgramSection = () => {
   const data = {
-    title: 'RWA Programs',
+    title: 'RWA PROGRAM',
     image: RWA,
     levels: [
       {
@@ -31,15 +31,21 @@ const RWAProgramSection = () => {
   return (
     <section className="py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-        
+           {/* Image Section */}
+           <div data-aos="fade-up">
+          <img
+            src={data.image}
+            alt={data.title}
+            className="w-full h-96 object-cover rounded-xl shadow-lg transition-transform duration-300 hover:scale-105"
+          />
+        </div>
         {/* Text Content */}
         <div className="space-y-8">
-          <h2 
-            className="text-3xl md:text-4xl lg:text-5xl font-bold bg-gradient-to-r from-[#60614B] via-[#5999BB] to-[#144661] bg-clip-text text-transparent"
-            data-aos="fade-up"
-          >
-            {data.title}
-          </h2>
+        <h1   className="text-3xl md:text-4xl lg:text-5xl font-extrabold bg-gradient-to-r from-[#60614B] via-[#2a688a] to-[#b63b1fde] bg-clip-text text-transparent"
+  style={{ fontFamily: "Times New Roman, serif" }} 
+  data-aos="fade-up">
+  {data.title}
+</h1>
 
           {/* Levels */}
           <div className="space-y-6">
@@ -69,14 +75,7 @@ const RWAProgramSection = () => {
    </button>
         </div>
 
-        {/* Image Section */}
-        <div data-aos="fade-up">
-          <img
-            src={data.image}
-            alt={data.title}
-            className="w-full h-96 object-cover rounded-xl shadow-lg transition-transform duration-300 hover:scale-105"
-          />
-        </div>
+     
       </div>
     </section>
   );

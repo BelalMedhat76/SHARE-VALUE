@@ -4,7 +4,7 @@ import nft from '../../images/nft.webp'
 const NFTProgramSection = () => {
   // Hardcoded Data for NFT Program
   const data = {
-    title: 'NFT Programs',
+    title: 'NFT PROGRAM',
     image: nft,
     levels: {
       basic: 'Learn what NFTs are and how they work.',
@@ -16,18 +16,14 @@ const NFTProgramSection = () => {
   return (
     <section className="py-20 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto grid md:grid-cols-2 gap-12 items-center">
-             {/* Image Section */}
-             <div data-aos="fade-up">
-          <img
-            src={data.image}
-            alt={data.title}
-            className="w-full h-96 object-cover rounded-xl shadow-lg transform transition-transform hover:scale-105"
-          />
-        </div>
+       
         {/* Text Content */}
         <div className="space-y-8">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold bg-gradient-to-r from-[#60614B] via-[#5999BB] via-[#b63b1fde] to-[#144661] bg-clip-text text-transparent"
-  data-aos="fade-up">{data.title}</h2>
+     <h1   className="text-3xl md:text-4xl lg:text-5xl font-extrabold bg-gradient-to-r from-[#60614B] via-[#2a688a] to-[#b63b1fde] bg-clip-text text-transparent"
+  style={{ fontFamily: "Times New Roman, serif" }} 
+  data-aos="fade-up">
+  {data.title}
+</h1>
           <div className="space-y-6">
             <div className="flex items-start space-x-4" data-aos="fade-up" data-aos-delay="100">
               <CheckCircle className="w-6 h-6 text-indigo-600 mt-1" />
@@ -59,7 +55,14 @@ const NFTProgramSection = () => {
                   </button>
         </div>
 
-  
+        {/* Image Section */}
+        <div data-aos="fade-up">
+          <img
+            src={data.image}
+            alt={data.title}
+            className="w-full h-96 object-cover rounded-xl shadow-lg transform transition-transform hover:scale-105"
+          />
+        </div>
       </div>
     </section>
   );
